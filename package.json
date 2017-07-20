@@ -1,0 +1,35 @@
+{
+  "name": "electron-react-interface",
+  "version": "0.5.0",
+  "description": "This is React interface manager for Electron.",
+  "main": "./index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NNesh/electron-react-interface.git"
+  },
+  "keywords": [
+    "Electron",
+    "React",
+    "GUI"
+  ],
+  "author": "Ruslan Mullayanov <mullruslan@yandex.ru",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/NNesh/electron-react-interface/issues"
+  },
+  "homepage": "https://github.com/NNesh/electron-react-interface#readme",
+  "dependencies": {
+    "event-emitter": "^0.3.5"
+  },
+  "devDependencies": {
+    "electron-compile": "^6.4.1",
+    "electron-compilers": "^5.9.0",
+    "electron-prebuilt-compile": "^1.7.4",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1"
+  }
+}
