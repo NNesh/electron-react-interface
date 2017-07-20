@@ -19,7 +19,7 @@ This is module for communication between GUI of renderer process and main proces
 
 #### Working scheme
 
-![image](./static/arch.png)
+![image](https://github.com/NNesh/electron-react-interface/blob/master/static/arch.png?raw=true)
 
 ### License
 Copyright (c) 2017 Ruslan Mullayanov (<mullruslan@yandex.ru>)
