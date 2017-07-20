@@ -17,6 +17,9 @@ This is module for communication between GUI of renderer process and main proces
   or:  
     `var { ElementsManager } = require 'electron-react-interface'`
 
+#### Working scheme
+
+![image](./static/arch.png)
 
 ### License
 Copyright (c) 2017 Ruslan Mullayanov (<mullruslan@yandex.ru>)
