@@ -5,22 +5,25 @@
   const url = require('url');
   const path = require('path');
 
-  const Component = require('./lib/component');
+  const React = require('react');
 
+  const { InterfaceManager, Component } = require('./module');
+
+
+  let interfaceManager = new InterfaceManager(__dirname);
 
   let win;
 
   function createWindow() {
-    win = new BrowserWindow({width: 800, height: 640});
+    win = new BrowserWindow({width: 800, height: 640, show: false});
 
     win.on('closed', () => {
       win = null;
     });
-    win.on('focus', () => {
-      let component1 = new Component();
-      let component2 = new Component();
-      console.log('Component 1: %s', component1.id);
-      console.log('Component 2: %s', component2.id);
+    win.on('ready-to-show', () => {
+      interfaceManager.addComponent('print-component', 'workspace');
+
+      win.show();
     });
 
     win.loadURL(url.format({
